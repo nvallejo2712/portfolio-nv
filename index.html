@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Roboto:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+            <div class="logo">
+                <h1>Nicolas Vallejo</h1>
+                <h3>Web Designer Portfolio</h3>
+            
+            </div>
+            <div class="iconos">
+                <i class="fab fa-linkedin-in fa-2x"></i>
+                <i class="fab fa-github fa-2x"></i>
+            </div>
+    </header>
+
+    <hr>
+    
+    <section class="portfolio">
+        
+         <div onclick="abrir(1)">
+            <div>
+                <img src="img/page1.png" alt="">
+            </div>
+                    
+        </div>
+         <div onclick="abrir(2)">
+                <div>
+                        <img src="img/page2.png" alt="">
+                    </div>
+           
+        </div>
+         <div onclick="abrir(3)">
+                <div>
+                        <img src="img/page3.png" alt="">
+                    </div>
+            
+        </div>
+         <div onclick="abrir(4)">
+                <div>
+                        <img src="img/page4.png" alt="">
+                    </div>
+            
+        </div>
+          <div onclick="abrir(5)">
+                <div>
+                        <img src="img/page5.png" alt="">
+                    </div>
+            
+        </div>
+         <div onclick="abrir(6)">
+                <div>
+                        <img src="img/page6.png" alt="">
+                    </div>
+            
+        </div>
+         <div onclick="abrir(7)">
+                <div>
+                        <img src="img/page7.png" alt="">
+                    </div>
+            
+        </div>
+         <div onclick="abrir(8)">
+                <div>
+                        <img src="img/page8.png" alt="">
+                    </div>
+            
+        </div>
+        <div onclick="abrir(8)">
+            <div>
+                    <img src="img/page2.png" alt="">
+                </div>
+        
+    </div>
+
+
+
+
+    </section>
+    
+   
+
+    <section class="sobre-mi"></section>
+
+</div>
+
+<!--modal-->
+
+<div id="modal-container" class="modal-container">
+    <div class="modal">
+        <div class="modal-container-img">
+            <img id="modal-img"  alt="">
+        </div>
+
+
+        <!--div id="modal-text" class="modal-text">
+           
+            
+        </div>-->
+        <div class="modal-buttons">
+                <!-- button>ir al sitio</button>-->
+                <button onclick="cerrar()">cerrar</button>
+        </div>
+
+    </div>
+
+</div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
