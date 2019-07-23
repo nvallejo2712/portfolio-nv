@@ -1,18 +1,20 @@
 *{
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+    box-sizing: border-box;font-family: 'Literata', serif;
 }
+
+
 
 button{
     cursor:pointer;
 }
 
 .container{
+    padding: 0 2em 2em 2em;
     max-width: 1100px;
     margin: 0 auto;
     background: white;
-    padding: 0 2em;
     -webkit-box-shadow: 0px 0px 27px -20px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 27px -20px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 27px -20px rgba(0,0,0,0.75);
@@ -22,31 +24,35 @@ header h1{
     padding: 0 0 0 0;
     font-weight: 700;
     font-size: 3.5em;
-    font-family: 'Kaushan Script', cursive;
+  
 
-
+   
 
 }
+
+
 header h3{
     padding: .1em 0;
-    font-size: 1.3em;font-family: 'Kaushan Script', cursive;
+    
 }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 1em;
+    padding: 3em 0em;
     color: #212121;
     
     
 }
 
+
 .portfolio{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 0.5em;
-    padding: 3em 0;
+   
+    
     
 }
 .portfolio div{
@@ -63,17 +69,26 @@ header{
     height: 100%;
     
 }
-.portfolio div div:hover{
-    background: orange;
-    padding: 5px;
-    transition: .2s;
+
+
+.portfolio img:hover{
+
+   transform: scale(1.2); 
+   
   
 }
 .portfolio img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 20px;    transform:scale(1);
+
+    /*entender esto*/
+  
+    -webkit-transition: all 500ms; 
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms; 
+    -o-transition: all 500ms;       
 }
 
 
@@ -101,18 +116,24 @@ header{
     border-radius: .5em;
     animation-name: modalAnimation;
     animation-duration: .3s;
+
 }
 @keyframes modalAnimation {
-    0%   {opacity: 0;}
+    0%   {
+        transform: scale(0); 
+    }
   
-    100% {opacity:1;}
+    100% {
+        transform: scale(1); 
+    }
   }
 
 .modal-container-img{
-    height: 400px;
+    height: 80vh;
     overflow-y: scroll;
     flex-grow:3;
     flex-basis: 0;
+    max-height: fit-content;
     
 }
 
@@ -193,6 +214,8 @@ header{
     .iconos{
         padding: 1em;
     }
+
+ 
 }
 
 @media (max-width: 368px){
