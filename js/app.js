@@ -16,7 +16,7 @@ let parrModal=document.getElementById("parr-modal");
 function abrir(a){
     document.getElementById("modal-container").style.display="flex";
     document.getElementById("modal-img").setAttribute("src","img/page"+a+".png")
-/*
+
     switch(a){
         case 1:
             tituloModal.innerHTML="titulo1"
@@ -54,10 +54,19 @@ function abrir(a){
     }
 
 
-*/
+
 }
 
 function cerrar(){
     document.getElementById("modal-container").style.display="none";
     
 }
+
+
+
+/*btn up*/
+
+function irArriba(){
+    window.scrollTo(0, 0);
+}
+  
