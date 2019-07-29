@@ -57,6 +57,10 @@ header {
     padding: 0 .3em;
     color: #e4e4e4;
 }
+.iconos a:hover{    
+    color: white;
+    transition: .1s;
+}
 
 .logo {
     display: flex;
@@ -98,7 +102,7 @@ section {
 .portfolio-images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.5em;
+    grid-gap: .8em;
 }
 
 .portfolio div div {
@@ -195,6 +199,7 @@ footer {
     background: #2f2f2f;
     transition: .3s;
     color: grey;
+    
 }
 
 /********MODAL*********/
