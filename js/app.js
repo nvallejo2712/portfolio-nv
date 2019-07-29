@@ -16,7 +16,7 @@ let parrModal=document.getElementById("parr-modal");
 */
 function abrir(a) {
     document.getElementById("modal-container").style.display = "flex";
-    document.getElementById("modal-img").setAttribute("src", "img/page" + a + ".png")
+    document.getElementById("modal-img").setAttribute("src", "img/pages/page" + a + ".png")
 
     /*switch (a) {
         case 1:
